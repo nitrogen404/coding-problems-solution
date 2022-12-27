@@ -1,6 +1,6 @@
 # Coding Problem Solutions
 #### This repo contains problems from
- * Leetcode
+ * Leetcode and Blind 75
  * Algoexpert
  * Strivers SDE sheet
 

@@ -24,3 +24,22 @@
                 else:
                     low = mid + 1
         return i
+
+       
+# Sliding window method (bit more complicated)
+# O(n) time O(n) space
+
+def searchRange(self, nums: List[int], target: int) -> List[int]:
+        i = 0
+        while i < len(nums) and nums[i] != target:
+            i += 1
+        start = end = i
+        if end == len(nums):
+            return [-1, -1]
+        else:
+            for i in range(start, len(nums)):
+                if nums[i] != target:
+                    break
+                else:
+                    end += 1
+            return [start, end - 1]
